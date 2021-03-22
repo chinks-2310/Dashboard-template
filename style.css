@@ -1,0 +1,356 @@
+.main-container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 90vh;
+    min-width: 400px;
+    background-color: #1a1a1a;
+}
+
+.card-container-for-stocks {
+    margin-left: 250px;
+}
+
+.card-for-stock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.sidebar-container {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #1a1a1a;
+    color: #fff;
+    margin-bottom: 7vh;
+    box-shadow: 5px 5px 5px whitesmoke;
+}
+
+.content-container {
+    padding-top: 20px;
+}
+
+.sidebar-logo {
+    font-size: 20px;
+    background-color: lightgray;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50px;
+    margin-left: 0;
+}
+
+.sidebar-navigation {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: relative;
+}
+
+.sidebar-navigation li {
+    background-color: transparent;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    line-height: 20px;
+}
+
+.sidebar-navigation li a {
+    padding: 10px 15px 10px 30px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar-navigation li .fa {
+    margin-right: 10px;
+}
+
+.sidebar-navigation li a:active,
+.sidebar-navigation li a:hover,
+.sidebar-navigation li a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+.sidebar-navigation li::before {
+    background-color: #2574A9;
+    position: absolute;
+    content: '';
+    height: 100%;
+    left: 0;
+    top: 0;
+    -webkit-transition: width 0.2s ease-in;
+    transition: width 0.2s ease-in;
+    width: 3px;
+    z-index: -1;
+}
+
+.sidebar-navigation li:hover::before {
+    width: 100%;
+}
+
+.sidebar-navigation .header {
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: #151515;
+    padding: 10px 15px 10px 30px;
+}
+
+.sidebar-navigation .header::before {
+    background-color: transparent;
+}
+
+.content-container {
+    padding-left: 220px;
+}
+
+body {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+footer {
+    justify-content: center;
+    display: flex;
+    background-color: gray;
+    height: 6vh;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.header-logo,
+.header-home,
+.header-profile,
+.header-generate-report,
+.form-group,
+.header-logout,
+.form-control {
+    margin-top: 10px;
+}
+
+.form-control {
+    height: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header-area {
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
+    background-position: center center;
+    background-size: cover;
+}
+
+
+/* default css end */
+
+
+/* navbar regular css start */
+
+.navbar-area {
+    background: rgba(0, 0, 0, .6);
+    border-bottom: 1px solid #000;
+}
+
+.site-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a.site-logo {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 50%;
+    margin-left: 20px;
+}
+
+.site-navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.site-navbar ul li a {
+    color: #fff;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.site-navbar ul li a:hover {
+    background: rgba(255, 255, 255, .1);
+}
+
+.nav-toggler {
+    border: 3px solid #fff;
+    padding: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    height: 39px;
+    display: none;
+}
+
+.nav-toggler span,
+.nav-toggler span:before,
+.nav-toggler span:after {
+    width: 28px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    transition: .3s;
+}
+
+.nav-toggler span:before {
+    content: '';
+    transform: translateY(-9px);
+}
+
+.nav-toggler span:after {
+    content: '';
+    transform: translateY(6px);
+}
+
+.nav-toggler.toggler-open span {
+    background-color: transparent;
+}
+
+.nav-toggler.toggler-open span:before {
+    transform: translateY(0px) rotate(45deg);
+}
+
+.nav-toggler.toggler-open span:after {
+    transform: translateY(-3px) rotate(-45deg);
+}
+
+
+/* nav-toggler css start */
+
+
+/* intro-area css start */
+
+.intro-area {
+    height: calc(100vh - 61px);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.intro-area h2 {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 50px;
+    margin-bottom: 25px;
+}
+
+.intro-area p {
+    font-size: 18px;
+}
+
+
+/* intro-area css end */
+
+
+/* mobile breakpoint start */
+
+@media screen and (max-width: 767px) {
+    header {
+        height: 6vh;
+    }
+    a.site-logo {
+        font-size: 16px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 50%;
+        margin-left: 20px;
+    }
+    .sidebar-container {
+        width: 180px;
+    }
+    .container {
+        max-width: 720px;
+    }
+    /* navbar css for mobile start */
+    .nav-toggler {
+        display: block;
+    }
+    .site-navbar {
+        min-height: 60px;
+    }
+    .site-navbar ul {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 60px);
+        left: 0;
+        top: 60px;
+        flex-direction: column;
+        align-items: center;
+        border-top: 1px solid #444;
+        background-color: rgba(0, 0, 0, .75);
+        max-height: 0;
+        overflow: hidden;
+        transition: .3s;
+    }
+    .site-navbar ul li {
+        width: 100%;
+        text-align: center;
+    }
+    .site-navbar ul li a {
+        padding: 25px;
+    }
+    .site-navbar ul li a:hover {
+        background-color: rgba(255, 255, 255, .1);
+    }
+    .site-navbar ul.open {
+        max-height: 100vh;
+        overflow: visible;
+    }
+    .intro-area h2 {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+    /* navbar css for mobile end */
+    .form-control {
+        display: none;
+    }
+}
+
+
+/* mobile breakpoint end */
